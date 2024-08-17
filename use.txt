@@ -1,0 +1,14 @@
+import numpy as np
+from linear_regression import LinearRegression  # Import the class from linear_regression.py
+
+x_1d = np.random.randint(1, 9, size=(7, 1))  # Example feature matrix with 7 samples and 1 feature
+y_1d = np.random.randint(1, 9, size=(7))     # Example target vector
+model_1d = LinearRegression(learn_rate=0.01, iter=1000, x=x_1d, y=y_1d)
+
+x_2d = np.random.randint(1, 9, size=(7, 2))  # Example feature matrix with 7 samples and 2 features
+y_2d = np.random.randint(1, 9, size=(7))     # Example target vector
+model_2d = LinearRegression(learn_rate=0.01, iter=1000, x=x_2d, y=y_2d)
+
+ax = np.random.randint(5,10, size=(3, 7,5))
+ay= np.random.randint(5,10, size=(21))
+model=linear_regression(.001,100,ax,ay)
